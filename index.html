@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>formulario1</title>
+</head>
+  <body>
+  <h2>DEJANOS TUS DATOS POR FAVOR</h2><br>
+    <form action="contact.php" method="post">
+		<div class="fieldset"> 
+         <label for="carnet">CARNET DE IDENTIDAD</label> 
+         <input type="text" id="carnet" name="visitor_ci"  required autofocus> 
+        </div> <br>
+        <div class="fieldset"> 
+         <label for="name">NOMBRES</label> 
+         <input type="text" id="name" name="visitor_name" pattern=[A-Z\a-z]{3,30}> 
+        </div> <br>
+	    <div class="fieldset"> 
+         <label for="name">APELLIDO PATERNO</label> 
+         <input type="text" id="paterno" name="visitor_paterno" pattern=[A-Z\a-z]{3,30}> 
+        </div> <br>
+		<div class="fieldset"> 
+         <label for="name">APELLIDO MATERNO</label> 
+         <input type="text" id="materno" name="visitor_materno" pattern=[A-Z\a-z]{3,30}> 
+        </div> <br>
+		<div class="fieldset"> 
+         <label for="name">WHATSSAPP</label> 
+         <input type="tel" id="movil" name="visitor_movil" maxlength="8"> 
+        </div> <br>
+        <div class="fieldset"> 
+         <label for="email"> CORREO ELECTRONICO?</label> 
+         <input type="email" id="email" name="visitor_email" placeholder="xxxyyyzzz@gmail.com" required> 
+        </div><br>
+		
+        <div class="fieldset"> 
+         <label for="department-selection"> DE QUE DEPARTAMENTO ERES?</label> 
+		   <select id="department-selection" name="concerned_department" required> 
+           <option value="">LA PAZ</option> 
+           <option value="">ORURO</option> 
+           <option value="">POTOSI</option> 
+		   <option value="">COCHABAMBA</option> 
+           <option value="">CHUQUISACA</option> 
+           <option value="">TARIJA</option> 
+		   <option value="">PANDO</option> 
+           <option value="">BENI</option> 
+           <option value="">SANTA CRUZ</option> 
+		   </select> <br> 
+        </div><br>
+        <button type="submit">Enviar datos</button>
+		<input type="submit" value="Cancelar" name="Cancelar" id="Cancelar" />
+    </form>
+  </body>
+</html>
